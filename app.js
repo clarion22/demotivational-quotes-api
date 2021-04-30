@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 connectToDB();
 const routes = require('./routes');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 app.set('port', PORT);
