@@ -2,8 +2,10 @@ const express = require('express');
 const logger = require('morgan');
 const dotenv = require('dotenv').config();
 const { connectToDB } = require('./mongodb');
+const path = __dirname + '/views/';
 const app = express();
 app.use(express.json());
+app.use(express.static(path));
 connectToDB();
 const routes = require('./routes');
 const PORT = process.env.PORT || 5000;
@@ -13,6 +15,10 @@ app.set('port', PORT);
 app.set('env', NODE_ENV);
 app.use(logger('tiny'));
 app.use(routes);
+
+app.get('/', (req, res) => {
+	res.sendFile(path + 'index.html');
+});
 
 app.use((req, res, next) => {
 	const err = new Error(`${req.method} ${req.url} Not Found`);

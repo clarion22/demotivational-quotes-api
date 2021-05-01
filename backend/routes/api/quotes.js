@@ -1,7 +1,5 @@
 const express = require('express');
 const asyncHandler = require('express-async-handler');
-const fs = require('fs');
-const path = require('path');
 const router = express.Router();
 const { getDb } = require('../../mongodb');
 
