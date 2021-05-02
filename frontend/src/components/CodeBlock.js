@@ -8,12 +8,15 @@ const useStyles = makeStyles(() => ({
 	codeTitle: {
 		fontSize: '20px',
 	},
+	codeBox: {
+		marginTop: '20px',
+	},
 }));
 function CodeBlock({ codeText, codeOutput }) {
 	const classes = useStyles();
 
 	return (
-		<Box>
+		<Box className={classes.codeBox}>
 			<Typography className={classes.codeTitle}>
 				Example using fetch
 			</Typography>

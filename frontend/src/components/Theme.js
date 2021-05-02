@@ -17,30 +17,11 @@ export default createMuiTheme({
 		},
 	},
 	typography: {
-		tab: {
-			fontFamily: 'Raleway',
-			textTransform: 'none',
-			fontWeight: 700,
-			fontSize: '1rem',
+		h1: {
+			fontSize: '4rem',
 		},
-		estimate: {
-			fontFamily: 'Pacifico',
-			fontSize: '1rem',
-			textTransform: 'none',
-			color: 'white',
-		},
-		h2: {
-			fontFamily: 'Raleway',
-			fontWeight: 700,
-			fontSize: '2.5rem',
-			color: `${arcBlue}`,
-			lineHeight: 1.5,
-		},
-		h4: {
-			fontFamily: 'Raleway',
-			fontSize: '1.75rem',
-			color: `${arcBlue}`,
-			fontWeight: 700,
+		codeSubtitle: {
+			fontSize: '2em',
 		},
 	},
 });
