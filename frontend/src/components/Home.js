@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const codeText = `fetch('https://mysite/api')
+const codeText = `fetch('https://demotivational-quotes-api.herokuapp.com/api/quotes/random')
     .then(response => response.json())
     .then(quote => console.log(quote))`;
 
@@ -40,7 +40,7 @@ const codeOutput = `{
 	"author": "Homer Simpson",
 }`;
 
-const codeText1 = `fetch('https://mysite/api')
+const codeText1 = `fetch('https://demotivational-quotes-api.herokuapp.com/api/quotes/all')
     .then(response => response.json())
     .then(quote => console.log(quote))`;
 
@@ -69,14 +69,14 @@ function Home() {
 					Get one random quote
 				</Typography>
 				<Box className={classes.apiBox}>
-					https://mywebsite/api/quotes/random
+					https://demotivational-quotes-api.herokuapp.com/api/quotes/random
 				</Box>
 				<CodeBlock codeText={codeText} codeOutput={codeOutput} />
 				<Typography className={classes.apiSubtitle}>
 					Get all quotes
 				</Typography>
 				<Box className={classes.apiBox}>
-					https://mywebsite/api/quotes/all
+					https://demotivational-quotes-api.herokuapp.com/api/quotes/all
 				</Box>
 				<CodeBlock codeText={codeText1} codeOutput={codeOutput1} />
 			</Container>
