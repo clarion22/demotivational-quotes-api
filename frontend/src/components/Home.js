@@ -6,6 +6,7 @@ import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import CodeBlock from './CodeBlock';
 import Divider from '@material-ui/core/Divider';
+import Footer from './Footer.js';
 
 const useStyles = makeStyles((theme) => ({
 	title: {
@@ -80,6 +81,7 @@ function Home() {
 				</Box>
 				<CodeBlock codeText={codeText1} codeOutput={codeOutput1} />
 			</Container>
+			<Footer />
 		</React.Fragment>
 	);
 }
