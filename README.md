@@ -9,5 +9,21 @@
   <br />
  Free RESTful API service for demotivational quotes
  </p>
+ 
+ ## API Documentation
+
+#### GET [`/api/quotes/all`](https://demotivational-quotes-api.herokuapp.com/api/quotes/all)
+
+Get a list of all quotes 
+
+#### GET [`/api/quotes/random`](https://demotivational-quotes-api.herokuapp.com/api/quotes/random)
+
+Get one random quote 
+
+## Built With
+* Express.Js
+* MongoDb
+* React
+
 
 
