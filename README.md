@@ -6,6 +6,8 @@
   </a>
   <br />
   <a href="https://demotivational-quotes-api.herokuapp.com/#/">Live site</a>
+  <br />
+ Free RESTful API service for demotivational quotes
  </p>
 
-Free RESTful API service for demotivational quotes
+
