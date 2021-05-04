@@ -5,7 +5,7 @@
     <img src="frontend/src/assets/grumpy_cat.png" alt="Logo" width="80" height="80">
   </a>
   <br />
-  <a href="https://demotivational-quotes-api.herokuapp.com/#/">Live site</a>
+  <a href="https://demotivational-quotes-api.herokuapp.com/#/"><b>Live site</b></a>
   <br />
  Free RESTful API service for demotivational quotes
  </p>
